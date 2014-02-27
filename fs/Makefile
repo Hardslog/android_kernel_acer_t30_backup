@@ -131,3 +131,6 @@ ifeq ($(CONFIG_ACER_SECURE_MOUNT),y)
 EXTRA_CFLAGS += -DCONFIG_SECURE_MOUNT
 endif
 
+# Dynamic Fsync (By our buddy Faux123)
+obj-$(CONFIG_DYNAMIC_FSYNC)	+= dyn_sync_cntrl.o
+
